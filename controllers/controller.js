@@ -14,7 +14,7 @@
 
 
 // //Index Route
-// app.get("/activities", async (req, res) => {
+// activityRouter.get("/activities", async (req, res) => {
 //     //go get activities
 //     await Activity.find({}).catch((err) => res.send(err));
 //     //render index.js

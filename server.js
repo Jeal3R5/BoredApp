@@ -36,14 +36,14 @@ app.use("/static", express.static("public"));
 
 //Routes
 
-// //Index Route
-// app.get("/activities", async (req, res) => {
-//   //go get activities
-//   await Activity.find({}).catch((err) => res.send(err));
-//   //render index.js
-//   res.render("index.ejs", { activities });
-//   //console.log(activities)
-// });
+//Index Route
+app.get("/activities", async (req, res) => {
+  //go get activities
+  await Activity.find({}).catch((err) => res.send(err));
+  //render index.js
+  res.render("index.ejs", { activities });
+  //console.log(activities)
+});
 
 //Seed Route
 app.get("/activities/seed", async (req, res) => {
