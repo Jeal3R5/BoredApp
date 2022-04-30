@@ -80,7 +80,7 @@ The app is fairly simple, not much instruction is needed that isn't already in t
 
 If interested please visit my site: 
     -Github: https://github.com/Jeal3R5/BoredApp
-    -Heroku:
+    -Heroku: https://git.heroku.com/bored-app-jr.git
 
 ### Future Enhancements
 
