@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bored Home</title>
+    <script src="/static/app.js" defer></script>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1 id="myH1">Tan aburrido!</h1>
+    <nav>
+       <a href="/activities/new" id="newActLink">Add New Activity</a>
+    </nav>
+    
+    <h3 id="soBored">So Bored! Activity Generator</h3><br>
+    <h4>Are you bored and out of ideas? Let me take care of that for your! Press the button to receive a randomly chosen activity.</h4> <br><br>
+    <div id="indexImages">
+        <div class="row">
+            <div class="column">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9kP20Wsjt4F9k1YdsXB7pdJaILm_04yxPQ&usqp=CAU" alt="lady bored at her desk" id="helpLady">
+            </div>
+            <div class="column">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdSw6CzFEiKO9B0BiDYkm5zKpxehLJ-hzz0w&usqp=CAU">
+            </div>
+            <div class="column">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsnfM1Wn7SFLRmHccOj9aOzIJtE43S59oVFA&usqp=CAU" alt="group of people playing ring around the rosie" id="ringAround">
+            </div>
+        </div>
+    </div><br><br><br>    
+
+     <div class="randBtn"> 
+         <form action="/randAct" method="get" id="newRandAct">
+            <input type="submit" value="Find Me Something Good" id="randomGenBtn">
+        </form>
+        </div>
+        
+    
+<br><br><br>
+    <h3 id="iDunno">I Know What I Want ... But I Don't </h3>
+    <br><br>
+    <p id="directions">Place the type of activity you would like to search for in the search box: physical, creative, education, or social? (...more to come shortly!)</p><br>
+    
+    <form action="/search" method="get" id="typeSearch">        
+        <input type="text" name="type" placeholder="Search For" id="searchBox">
+        <input type="submit" value="Submit" id="searchBtn">
+    </form><br><br><br><br>
+
+</body>
+ <footer style="color: #2DD220">
+     @2022 Jeal3R5
+ </footer>
+</html>
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/static/app.js" defer></script>
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Activity Page</title>
+</head>
+<body>
+    <nav>
+        <a href="/activities" class="homeLink">Home</a> <br><br>
+        <a href="/activities/<%= activity._id %>/edit">Edit Activity</a>
+    </nav>
+    <h1> <%= activity.activity %> </h1><br><br>
+    <h3 id="showDeets">Activity Details</h3><br><br><br>
+    
+    <div>Type: <%= activity.type %></div> <br>
+    <div>Participants: <%= activity.participants%></div> <br>
+    <div>Price: <%= activity.price %></div> <br>
+    <div>Link: <%= activity.link %></div> <br>
+    <br><br><br><br><br>
+    <form action="/activities/<%= activity._id%>?_method=DELETE" method="POST">
+        <input type="submit" value="DELETE" class="deleteLink">
+    
+</body>
+
+<footer style="color: #2DD220">
+    @2022 Jeal3R5
+</footer>
+
+</html>

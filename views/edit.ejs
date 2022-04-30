@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/static/app.js" defer></script>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <title>Edit Activity</title>
+  </head>
+  <body>
+    <h1>Edit Activity</h1>
+    <a href="/activities" class="homeLink">Home</a><br><br><br><br><br>
+    <form action="/activities/<%=activity._id%>?_method=PUT" method="post" id="editActForm">
+      Activity: <input type="text" name="activity" value="<%= activity.activity%>" placeholder="activity name"><br><br>
+      Type: <input type="text" name="type" value="<%= activity.type%>" placeholder="physical, social, education, social"><br><br>
+      Participants: <input type="text" name="participants" value="<%=activity.participants%>" placeholder="Number of Players"><br><br>
+      Price: <input type="text" name="price" value="<%= activity.price %>" placeholder="true/false"><br><br>
+      Link: <input type="text" name="link" value="<%= activity.link%>" placeholder="URL"><br><br>
+      <input type="submit" value="Submit"><br><br><br>
+    </form>
+
+    <form action="activities/<%= activity._id%>?_method=DELETE" method="post" class="deleteLink">
+      <input type="submit" value="DELETE" id="editDeleteBtn"><br><br><br>
+    </form> <br><br><br>
+
+  </body>
+
+  <footer style="color: #2dd220">@2022 Jeal3R5</footer>
+
+  </html>

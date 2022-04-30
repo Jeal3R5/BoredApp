@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/static/app.js" defer></script>
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>New Activity</title>
+  </head>
+  <body id="newActPage">
+    <nav>
+      <a href="/activities" class="homeLink">Home</a>
+    </nav>
+    <h1>Add New Activity</h1>
+    <br><br>
+    <div class="actNewDivs">
+    <form action="/activities" method="post" id="newActForm">
+      Activity: <input type="text" name="activity" class="textBoxBackGr"><br><br>
+      Type: <input type="text" name="type" class="textBoxBackGr"><br><br>
+      Participants: <input type="text" name="participants" class="textBoxBackGr"><br><br>
+      Price: <input type="text" name="price" default="false" class="textBoxBackGr"><br><br> 
+      Link: <input type="text" name="link" class="textBoxBackGr"><br><br>
+      <br><br>
+      <input type="submit" value="Submit" id="addNewBtn">
+    </form>
+    </div>
+  </body>
+
+<footer style="color: #2DD220">
+    @2022 Jeal3R5
+</footer>
+
+</html>
+
+
+
+
