@@ -36,6 +36,11 @@ app.use("/static", express.static("public"));
 
 //Routes
 
+app.get('/', (req, res) => {
+  res.redirect('/activities')
+}
+
+
 //Index Route
 app.get("/activities", async (req, res) => {
   //go get activities
