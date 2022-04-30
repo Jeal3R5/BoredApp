@@ -38,7 +38,7 @@ app.use("/static", express.static("public"));
 
 app.get('/', (req, res) => {
   res.redirect('/activities')
-}
+})
 
 
 //Index Route
