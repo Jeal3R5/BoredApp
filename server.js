@@ -48,7 +48,8 @@ app.get("/activities", async (req, res) => {
   //render index.js
   res.render("index.ejs", { activities });
   //console.log(activities)
-});
+})
+
 
 //Seed Route
 app.get("/activities/seed", async (req, res) => {
@@ -59,7 +60,8 @@ app.get("/activities/seed", async (req, res) => {
   await Activity.create(activities).catch((err) => res.send(err));
   //send the activities as json
   res.json(activities)
-});
+})
+
 
 //RandomActivityGenerator Route
 app.get("/randAct", (req, res) => {
@@ -83,45 +85,46 @@ app.get("/search", (req, res) => {
   })
 })
 
+
 //New Route
 app.get('/activities/new', (req, res) => {
     res.render('new.ejs')
-});
+})
+
 
 //Delete Route
 app.delete("/activities/:id", (req, res) => {
    Activity.findByIdAndDelete(req.params.id, (err, deletedActivity) => {
     res.redirect("/activities")
-  })
+  });
 })
+
+
 //Update Route
 app.put('/activities/:id',  (req, res) => {
     Activity.findByIdAndUpdate(req.params.id, req.body, (err, updatedActivity) => {
         if (err) console.log(err);
         res.redirect(`/activities/${req.params.id}`);
-    })
-});
+    });
+})
+
 
 //Create Route
 app.post('/activities', (req, res) => {
     //create the activity
    // console.log(req.body)
-    Activity.create(req.body).catch((err) => res.send(err))
+    Activity.create(req.body).catch((err) => res.send(err));
     //redirect back to main page
-    res.redirect('/activities')
+    res.redirect('/activities');
 })
 
 
 //Edit Route
 app.get("/activities/:id/edit",  ( req, res) => {
      Activity.findById(req.params.id, (err, activity) => {
-      res.render(("edit.ejs"), { activity })
-    })
+      res.render(("edit.ejs"), { activity });
+    });
 })
-
-
-
-
 
 
 //Show Route
@@ -129,7 +132,7 @@ app.get("/activities/:id", (req, res) => {
     Activity.findById(req.params.id, (err, activity) => {
         res.render('show.ejs', { activity });
     });
-});
+})
 
 
 
