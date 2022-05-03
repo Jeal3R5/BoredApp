@@ -2,7 +2,7 @@
 
 ### Project Idea
 
-This app is a random generator of activities. For those times when a person is bored and don't know what they would like to do. There is an option to add activities as well as edit, and delete. There is a database of activities, the schema follows that of the API for continuity. The user will be able to search for activities by type, which are listed as placeholders in the input box. 
+This app is a random generator of activities. For those times when a person is bored and don't know what they would like to do. There is an option to add activities as well as edit, and delete. There is a database of activities, the schema follows that of the API for continuity. The user will be able to search for activities by type, which are listed as placeholders in the input box. If you are interested in the process please check out my Trello here: https://trello.com/invite/b/Guwope7b/e4dbe6f6c0653871c4aca4d6d2f724ac/project-two
 
 Search By: Type
 - education
@@ -80,7 +80,7 @@ The app is fairly simple, not much instruction is needed that isn't already in t
 
 If interested please visit my site: 
     -Github: https://github.com/Jeal3R5/BoredApp
-    -Heroku: https://git.heroku.com/bored-app-jr.git
+    -Heroku: https://bored-app-jr.herokuapp.com/activities
 
 ### Future Enhancements
 
